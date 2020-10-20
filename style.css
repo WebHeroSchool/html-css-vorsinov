@@ -1,10 +1,10 @@
-title {
+.title {
   font-family: 'Poppins', sans-serif;
 }
-  subtitle {
-    font-family:"Chilanka", sans-serif;
+  .subtitle {
+    font-family: 'Chilanka', cursive;
   }
-    button {
-      font-family:"Ubuntu", sans-serif;
+    .button {
+      font-family: 'Mukta', sans-serif;
     }
 
