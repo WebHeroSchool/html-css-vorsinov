@@ -1,10 +1,43 @@
-.title {
+.main-content__title {
   font-family: 'Poppins', sans-serif;
 }
-  .subtitle {
+  .main-content__subtitle {
     font-family: 'Chilanka', cursive;
   }
-    .button {
+    .main-content__button {
       font-family: 'Mukta', sans-serif;
     }
-
+    body {
+    display: block;
+    margin: 0;  
+    }  
+    .header {
+      display: flex;
+      justify-content: space-between;
+      margin: auto;
+      width: 80%;
+     }
+     .main-section {
+      margin: auto;
+      width: 80%;     
+     }
+     .logo {
+      padding: 40px 0;
+      margin-right: 63%;
+      display: inline-block;
+     }
+     .menu {
+      display: inline-block;
+      display: flex;
+      align-items: center;
+    }
+    .menu__item {
+      padding: 0 13px;
+    }
+    .menu__item:last-child {
+      padding-right: 0;
+    }
+     
+     
+               
+     
