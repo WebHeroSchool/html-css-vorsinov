@@ -1,23 +1,24 @@
 @font-face {
-    font-family: 'Lato';
-    src: url('lato.woff2') format('woff2'),
-         url('lato.woff') format('woff');
-    font-weight: normal;
-    font-style: normal;
-  }
-
-  @font-face {
-     font-family: 'Montserrat';
-     src: url('montserrat.woff2') format('woff2'),
-          url('montserrat.woff') format('woff');
-     font-weight: normal;
-     font-style: normal;
-   }
-
-   @font-face {
-     font-family: 'Mukta';
-     src: url('mukta.woff2') format('woff2'),
-          url('mukta.woff') format('woff');
-     font-weight: normal;
-     font-style: normal;
-   }
+  font-family: 'ptserif_bolditalic';
+  src: url('fonts/ptserif-bolditalic-webfont.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'ptserif-bold';
+  src: url('ptserif-bold-webfont.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'ptserif_italic';
+  src: url('ptserif-italic-webfont.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'ptserif_regular';
+  src: url('ptserif-regular-webfont.woff') format('woff2');
+  font-weight: normal;
+  font-style: normal;
+}
