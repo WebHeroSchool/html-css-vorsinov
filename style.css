@@ -1,35 +1,32 @@
-.main-content__title {
-  font-family: 'Poppins', sans-serif;
-}
-  .main-content__subtitle {
-    font-family: 'Chilanka', cursive;
-  }
-    .main-content__button {
-      font-family: 'Mukta', sans-serif;
-    }
     body {
-    display: block;
-    margin: 0;  
-    }  
+      display: block;
+      margin: 0;  
+    }
+    
+    .wrapper {
+    margin: auto;  
+    width: 80%;
+    }
+    
     .header {
-      display: flex;
-      justify-content: space-between;
-      margin: auto;
-      width: 80%;
-     }
-    .main-section {
-      margin: auto;
-      width: 80%;     
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    width:80%; 
+    margin-bottom: 100px;
+    }
+
+    .main {
+    padding: 0 63% 100px 0;
+    background: top right no-repeat url(img/Frame.svg);  
     }
     .logo {
       position: relative;
       padding: 40px 0;
       padding-left: 44px;
-      margin-right: 63%;
       display: block;
-      font: bold 24px/31px pt_serif, arial, helvetica, sans-serif;
+      font: bold 24px/31px pt_serif, arial, helvetica, sans-serif; 
     }
-    
     .menu {
       display: flex; 
       align-items: center;
@@ -39,6 +36,7 @@
       color: #000;
       cursor: pointer
     }
+    
     .menu__item {
       position: relative;
       padding: 0 13px;
@@ -48,6 +46,7 @@
       margin-right: 26px;
       transition: opacity.5s;
     }
+
     .menu__item:last-child {
       padding-right: 0;
     }
@@ -62,6 +61,7 @@
       border-radius: 50%;
       opacity: .7;
     }
+
     .logo__circle_color_blue {
       left: 8px;
       top: 56%;
@@ -69,6 +69,7 @@
       border-radius: 50%;
       opacity: .7;
     }
+
     .menu__item_active::after {
       position: relative;
       display: block;
@@ -78,9 +79,11 @@
       background: #0056EC;
       margin-right: 0;
     }
+
     .menu__item:hover {
-     opacity: 0.5;
+      opacity: 0.5;
     }
+
     .menu__item:hover::after {
       position: absolute;
       left: 0;
@@ -90,13 +93,26 @@
       height: 3px;
       background: #0056EC;
       transition: opacity .5s, width .5s;
-    }  
-    .menu__item:hover:after, .menu__item_active:after {
-     opacity: 1;
-     width: 100%;
     }
-         
-     
+
+    .menu__item:hover:after, .menu__item_active:after {
+      opacity: 1;
+      width: 100%;
+    }
+        
+    .main__title {
+      margin: 0 0 40px 0;
+      font: bold 50px/67px pt_serif, arial, helvetica, sans-serif;
+    }
+    
+    .main__subtitle {
+      margin: 0 0 41px 0;
+      font: 18px/21px roboto, arial, helvetica, sans-serif;
+    }
+      
+    .main__button {
+      font: 14px/16px Roboto, arial, helvetica, sans-serif;
+    }
     
 
      
