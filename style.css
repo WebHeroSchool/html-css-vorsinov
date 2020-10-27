@@ -33,12 +33,11 @@
       position: relative;
       font: 18px/21px Roboto, arial, helvetica, sans-serif;
       color: #000;
-      cursor: pointer
+      cursor: pointer;
     }
     
     .menu__item {
       position: relative;
-      padding: 0 13px;
       font: 500 18px/21px Roboto, arial, helvetica, sans-serif;
       color: #000;
       text-decoration: none;
@@ -47,7 +46,7 @@
     }
 
     .menu__item:last-child {
-      padding-right: 0;
+      margin-right: 0;
     }
     .logo__circle {
       position: absolute ;
@@ -101,12 +100,12 @@
         
     .main__title {
       margin: 0 0 40px 0;
-      font: bold 50px/67px pt_serif, arial, helvetica, sans-serif;
+      font: bold 66px/87x pt_serif, arial, helvetica, sans-serif;
     }
     
     .main__subtitle {
       margin: 0 0 41px 0;
-      font: 18px/21px roboto, arial, helvetica, sans-serif;
+      font: 22px/26px roboto, arial, helvetica, sans-serif;
     }
 
     .main__title-text_highlight {
@@ -114,7 +113,7 @@
      }
     .main__button {
     display: inline-block;
-    font:14px/16px roboto, arial, helvetica, sans-serif; 
+    font:18px/21px roboto, arial, helvetica, sans-serif; 
     color: #fff; 
     background: #0056EC;
     padding: 14px 16px;
