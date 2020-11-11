@@ -20,6 +20,7 @@
     background: top right no-repeat url(img/Frame.svg);
     background-size: 774px;  
     }
+    
     .logo {
       position: relative;
       padding: 40px 0;
@@ -143,13 +144,304 @@
     
    .main__button:hover {
    opacity: .5;
+  }
+
+  .menu__checkbox {
+    display: none;
+  }
+  
+     @media (max-width:1366px) {
+    .wrapper {
+      width: 80%;
+  }
+     
+   .header {
+     margin-bottom: 29px;
+  }
+   .logo {
+       margin-left: 77px;
+  }
+ 
+   .logo__circle {
+     left: 5px;
+     top: 48%;
+  }
+
+   .logo__circle_color_blue {
+    left: 13px;
+    top: 61px;
+  }
+
+  .menu {
+    margin-right: 33px;
+    font: 14px/16px robotomedium, arial, helvetica, sans-serif;
+  }
+ 
+  .menu__item {
+    position: relative;
+    font: 500 14px/16px robotomedium, arial, helvetica, sans-serif;
+    color: #000;
+    text-decoration: none;
+    margin-right: 30px;
+    transition: opacity.5s;
+  }
+
+  .menu__item:first-child {
+    margin-right: 23px;
+  }
+              
+  .menu__item:nth-child(2){
+    top: 3px;
+ }
+
+     .menu__item:last-child {
+      margin-right: 78px;
+ }
+  
+    .main {
+         padding: 71px 50% 116px 0;
+         background: no-repeat url(img/Frame.svg);
+         background-position: center left 500px;  
+       }
+       
+       .main__title {
+          margin: 0 0 26px 83px;
+           font: 50px/66px pt_serifbold, arial, helvetica, sans-serif;
+          }
+          
+       .main__subtitle {
+            margin: 37px 0 43px 83px;
+            font: 18px/21px robotoregular, arial, helvetica, sans-serif;
+            max-width: 390px;   
+        }
+ .main__button {
+         margin-left: 81px;
+         font: 14px/16px robotomedium, arial, helvetica, sans-serif; 
+         width: 209px;
+         height: 44px;
+         line-height: 44px;
+       }
+
+       .menu__checkbox {
+        display: none;
+      }
+     }
+
+ @media (max-width:1024px) {
+  
+.wrapper {
+  width: 104%;
+  }
+       
+.header {
+  margin-bottom: 29px;
+  }
+
+.logo {
+  margin-left: 41px;
+  }
+   
+.logo__circle {
+  left: 5px;
+  top: 49%;
+  }
+  
+.logo__circle_color_blue {
+   left: 12px;
+   top: 61px;
    }
+  
+.menu {
+  margin-right: 7px;
+  font: 14px/16px robotomedium, arial, helvetica, sans-serif;
+  }
+   
+.menu__item:first-child {
+  margin-right: 23px;
+  }
+                
+.menu__item:nth-child(3){
+  padding-left: 10x;
+  }
+
+.menu__item:nth-child(2){
+  margin-right: 10x;
+  top: 2px;
+  }
+  
+.menu__item:last-child {
+  margin-right: 78px;
+  }
     
+.main {
+  padding: 77px 50% 124px 0;
+  background: no-repeat url(img/Frame.svg);
+  background-position: center left 463px;  
+  }
+         
+.main__title {
+  margin: 7px 13px 37px 46px;
+  font: 50px/66px pt_serifbold, arial, helvetica, sans-serif;
+  }
+            
+.main__subtitle {
+  margin: 10px 0 43px 46px;
+  font: 18px/21px robotoregular, arial, helvetica, sans-serif;
+  max-width: 390px;   
+  }
+.main__button {
+  margin-left: 42px;
+  font: 14px/16px robotomedium, arial, helvetica, sans-serif; 
+  width: 209px;
+  height: 44px;
+  line-height: 44px;
+  }
 
-     
-      
-      
+  .menu__checkbox {
+    display: none;
+  }
+  
+  @media (max-width:442px) {
 
-     
-               
-     
+.wrapper {
+  width: 100%;
+  }  
+  
+.header {
+  margin-bottom: 0px;
+  margin-left: 20px;
+  max-height: 60px;
+  }
+
+    
+.logo {
+  bottom: 15px;
+  right: 42px;
+  font-size:0;
+  }
+  
+.logo__circle {
+  right: 0px;
+  top: 66%;
+  }
+
+.logo__circle_color_blue {
+  left: 13px;
+  top: 60px;
+  }
+
+
+.main {
+  padding: 60% 0px 0px 0px;
+  background-position: left top 25px;
+  background-size: 285px;
+  text-align: center;
+  margin-left: 45px;
+}
+
+.main__title {
+  padding-right: 103px;
+  margin: 25px 0px 37px 0px;
+  font: 30px/37px pt_serifbold, arial, helvetica, sans-serif;
+  max-width: 340px;
+  margin-right: 2px;
+}
+
+.main__subtitle {
+  margin: 0px 0 27px 25px;
+  font: 16px/18px robotoregular, arial, helvetica, sans-serif;
+  max-width: 240px;
+}
+
+.main__button {
+  margin-right: 151px;
+  font: 14px/16px robotomedium, arial, helvetica, sans-serif;
+  width: 209px;
+  height: 44px;
+  line-height: 44px;
+} 
+
+.menu__button {
+  display: flex;
+  align-items: center;
+  position: fixed;
+  top: 20px;
+  left: 340px;
+  width: 26px;
+  height: 26px;
+  cursor: pointer;
+  z-index: 4;
+}
+.menu__button > span,
+.menu__button > span ::before,
+.menu__button > span ::after {
+  display: block;
+  position: absolute;
+  width: 100%;
+  height: 2px;
+  background-color: #616161;
+}
+.menu__button > span::before {
+  content: '';
+  top: 60px;
+  width: 70px;
+}
+.menu__btn > span::after {
+  content: '';
+  top: 50px;
+}
+.menu {
+  display: block;
+  position: fixed;
+  visibility: hidden;
+  top: 0;
+  left: auto;
+  width: s300px;
+  height: 100%;
+  margin: 0;
+  padding: 80px 0;
+  list-style: none;
+  text-align: center;
+  background-color: #ECEFF1;
+  box-shadow: 1px 0px 6px rgba(0, 0, 0, .2);
+}  
+.menu__item {
+  display: block;
+  padding: 12px 24px;
+  color: #333;
+  font-family: 'robotomedium', sans-serif;
+  font-size: 20px;
+  font-weight: 600;
+  text-decoration: none;
+}
+.menu__item:hover {
+  background-color: #CFD8DC;
+}
+
+.menu__checkbox:checked ~ .menu > span {
+  transform: rotate(45deg);
+}
+.menu__checkbox:checked ~ .menu > span ::before {
+  top: 0;
+  transform: rotate(0);
+}
+.menu__checkbox:checked ~ .menu > span ::after {
+  top: 0;
+  transform: rotate(90deg);
+}
+.menu__checkbox:checked ~ .menu {
+  visibility: visible;
+  left: 0;
+}
+.menu__button > span, 
+.menu__button > span ::before,
+.menu__button > span ::after {
+  transition-duration: .25s;
+}
+.menu {
+  transition-duration: .25s;
+}
+.menu-item {
+  transition-duration: .25s;
+}
+}
