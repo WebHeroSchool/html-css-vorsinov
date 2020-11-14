@@ -173,7 +173,8 @@
   }
 
   .menu {
-    margin-right: 33px;
+    margin-right: 5px;
+    margin-top: 4px;
     font: 14px/16px robotomedium, arial, helvetica, sans-serif;
   }
  
@@ -234,7 +235,8 @@
   }
        
 .header {
-  margin-bottom: 29px;
+  margin-bottom: 16px;
+  margin-top: 7px;
   }
 
 .logo {
@@ -332,7 +334,7 @@
 
 
 .main {
-  padding: 60% 0px 0px 0px;
+  padding: 60% 45px 0px 0px;
   background-position: left top 25px;
   background-size: 285px;
   text-align: center;
@@ -340,8 +342,8 @@
 }
 
 .main__title {
-  padding-right: 103px;
-  margin: 25px 0px 37px 0px;
+  padding-right: 59px;
+  margin: 26px 0px 37px 0px;
   font: 30px/37px pt_serifbold, arial, helvetica, sans-serif;
   max-width: 340px;
   margin-right: 2px;
@@ -354,7 +356,8 @@
 }
 
 .main__button {
-  margin-right: 151px;
+  margin-right: 112px;
+  margin-left: 34px;
   font: 14px/16px robotomedium, arial, helvetica, sans-serif;
   width: 209px;
   height: 44px;
@@ -366,7 +369,7 @@
   align-items: center;
   position: fixed;
   top: 20px;
-  left: 340px;
+  left: 325px;
   width: 26px;
   height: 26px;
   cursor: pointer;
