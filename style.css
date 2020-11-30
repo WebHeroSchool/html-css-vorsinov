@@ -361,7 +361,7 @@
       text-align: center;
       }
     .main__title {
-    margin: 29px 0px 41px 252px;
+    margin: 113px 0px 41px 252px;
     font: 40px/48px pt_serifbold, arial, helvetica, sans-serif;
     max-width: 340px;
     margin-right: 2px;
@@ -385,7 +385,7 @@
     align-items: center;
     position: fixed;
     top: 40px;
-    left: 700px;
+    left: 750px;
     width: 26px;
     height: 26px;
     cursor: pointer;
@@ -471,18 +471,18 @@
     }
   }  
   
-  @media (max-width:690px) {
+  @media (max-width:760px) {
     .main {
     background-size: 325px 325px;
     }
 
     .main__title {
-    margin: 99px 0px 54px 195px;
+    margin: 106px 0px 54px 223px;
     font: 37px/42px pt_serifbold, arial, helvetica, sans-serif;
     }
 
     .main__subtitle {
-    margin: 10px 3px 37px 186px;
+    margin: 10px 3px 37px 218px;
     }
     
     .menu__button {
@@ -490,7 +490,7 @@
     align-items: center;
     position: fixed;
     top: 40px;
-    left: 560px;
+    left: 660px;
     width: 26px;
     height: 26px;
     cursor: pointer;
@@ -576,18 +576,18 @@
     }
   }
 
-  @media (max-width:564px) {
+  @media (max-width:695px) {
     .main {
     background-size: 300px 300px;
     }
   
     .main__title {
-    margin: 144px 0px 54px 126px;
+    margin: 106px 0px 54px 189px;
     font: 34px/39px pt_serifbold, arial, helvetica, sans-serif;
     }
   
     .main__subtitle {
-    margin: 10px 3px 37px 115px;
+    margin: 10px 3px 37px 191px;
     }
       
     .menu__button {
@@ -595,7 +595,322 @@
     align-items: center;
     position: fixed;
     top: 40px;
-    left: 500px;
+    left: 600px;
+    width: 26px;
+    height: 26px;
+    cursor: pointer;
+    z-index: 1;
+    }
+     
+    .menu__button > span,
+    .menu__button > span::before, 
+    .menu__button > span::after {
+    display: block;
+    position: absolute;
+    width: 100%;
+    height: 2px;
+    background-color: #0056EC;
+    }
+      
+    .menu__button > span::before {
+    content: '';
+    top: 5px;
+    width: 26px;
+    }
+      
+    .menu__button > span::after {
+    content: '';
+    top: 10px;
+    width: 26px;
+    }
+      
+    .menu {
+    display: block;
+    position: fixed;
+    visibility: hidden;
+    left: auto;
+    width: 100%;
+    height: 100%;
+    padding: 70px 0;
+    list-style: none;
+    text-align: center;
+    background-color: #ffffff;;
+    }
+        
+    .menu__item {
+    display: block;
+    padding: 20px 24px;
+    color: #333;
+    font-family: 'robotomedium', sans-serif;
+    font-size: 30px;
+    font-weight: 600;
+    text-decoration: none;
+    }
+        
+    .menu__checkbox:checked ~ .menu__button > span {
+    transform: rotate(45deg);
+    }
+          
+    .menu__checkbox:checked ~ .menu__button > span::before {
+    transform: rotate(0);
+    top: 0;
+    }
+          
+    .menu__checkbox:checked ~ .menu__button > span::after {
+    transform: rotate(90deg);
+    top: 0;
+    }
+          
+    .menu__checkbox:checked ~ .menu {
+    visibility: visible;
+    left:0;
+    }
+          
+    .menu__button > span,
+    .menu__button > span::before,
+    .menu__button > span::after {
+    transition-duration: .25s;
+    }
+          
+    .menu {
+    transition-duration: .25s;
+    }
+        
+    .menu__item {
+    transition-duration: .25s;
+    }
+  }
+
+  @media (max-width:620px) {
+    .main {
+    background-size: 300px 300px;
+    }
+  
+    .main__title {
+    margin: 86px 0px 54px 159px;
+    font: 34px/39px pt_serifbold, arial, helvetica, sans-serif;
+    }
+  
+    .main__subtitle {
+    margin: 10px 3px 37px 145px;
+    }
+      
+    .menu__button {
+    display: flex;
+    align-items: center;
+    position: fixed;
+    top: 40px;
+    left: 540px;
+    width: 26px;
+    height: 26px;
+    cursor: pointer;
+    z-index: 1;
+    }
+     
+    .menu__button > span,
+    .menu__button > span::before, 
+    .menu__button > span::after {
+    display: block;
+    position: absolute;
+    width: 100%;
+    height: 2px;
+    background-color: #0056EC;
+    }
+      
+    .menu__button > span::before {
+    content: '';
+    top: 5px;
+    width: 26px;
+    }
+      
+    .menu__button > span::after {
+    content: '';
+    top: 10px;
+    width: 26px;
+    }
+      
+    .menu {
+    display: block;
+    position: fixed;
+    visibility: hidden;
+    left: auto;
+    width: 100%;
+    height: 100%;
+    padding: 70px 0;
+    list-style: none;
+    text-align: center;
+    background-color: #ffffff;;
+    }
+        
+    .menu__item {
+    display: block;
+    padding: 20px 24px;
+    color: #333;
+    font-family: 'robotomedium', sans-serif;
+    font-size: 30px;
+    font-weight: 600;
+    text-decoration: none;
+    }
+        
+    .menu__checkbox:checked ~ .menu__button > span {
+    transform: rotate(45deg);
+    }
+          
+    .menu__checkbox:checked ~ .menu__button > span::before {
+    transform: rotate(0);
+    top: 0;
+    }
+          
+    .menu__checkbox:checked ~ .menu__button > span::after {
+    transform: rotate(90deg);
+    top: 0;
+    }
+          
+    .menu__checkbox:checked ~ .menu {
+    visibility: visible;
+    left:0;
+    }
+          
+    .menu__button > span,
+    .menu__button > span::before,
+    .menu__button > span::after {
+    transition-duration: .25s;
+    }
+          
+    .menu {
+    transition-duration: .25s;
+    }
+        
+    .menu__item {
+    transition-duration: .25s;
+    }
+  }
+  
+  @media (max-width:560px) {
+    .main {
+    background-size: 260px 260px;
+    }
+  
+    .main__title {
+    margin: 86px 0px 54px 115px;
+    font: 34px/39px pt_serifbold, arial, helvetica, sans-serif;
+    }
+  
+    .main__subtitle {
+    margin: 10px 3px 37px 114px;
+    }
+      
+    .menu__button {
+    display: flex;
+    align-items: center;
+    position: fixed;
+    top: 40px;
+    left: 470px;
+    width: 26px;
+    height: 26px;
+    cursor: pointer;
+    z-index: 1;
+    }
+     
+    .menu__button > span,
+    .menu__button > span::before, 
+    .menu__button > span::after {
+    display: block;
+    position: absolute;
+    width: 100%;
+    height: 2px;
+    background-color: #0056EC;
+    }
+      
+    .menu__button > span::before {
+    content: '';
+    top: 5px;
+    width: 26px;
+    }
+      
+    .menu__button > span::after {
+    content: '';
+    top: 10px;
+    width: 26px;
+    }
+      
+    .menu {
+    display: block;
+    position: fixed;
+    visibility: hidden;
+    left: auto;
+    width: 100%;
+    height: 100%;
+    padding: 70px 0;
+    list-style: none;
+    text-align: center;
+    background-color: #ffffff;;
+    }
+        
+    .menu__item {
+    display: block;
+    padding: 20px 24px;
+    color: #333;
+    font-family: 'robotomedium', sans-serif;
+    font-size: 30px;
+    font-weight: 600;
+    text-decoration: none;
+    }
+        
+    .menu__checkbox:checked ~ .menu__button > span {
+    transform: rotate(45deg);
+    }
+          
+    .menu__checkbox:checked ~ .menu__button > span::before {
+    transform: rotate(0);
+    top: 0;
+    }
+          
+    .menu__checkbox:checked ~ .menu__button > span::after {
+    transform: rotate(90deg);
+    top: 0;
+    }
+          
+    .menu__checkbox:checked ~ .menu {
+    visibility: visible;
+    left:0;
+    }
+          
+    .menu__button > span,
+    .menu__button > span::before,
+    .menu__button > span::after {
+    transition-duration: .25s;
+    }
+          
+    .menu {
+    transition-duration: .25s;
+    }
+        
+    .menu__item {
+    transition-duration: .25s;
+    }
+  }
+
+  @media (max-width:520px) {
+    .main {
+    background-size: 250px 250px;
+    }
+  
+    .main__title {
+    margin: 86px 0px 54px 92px;
+    font: 34px/39px pt_serifbold, arial, helvetica, sans-serif;
+    }
+  
+    .main__subtitle {
+    margin: 10px 3px 37px 93px;
+    }
+      
+    .menu__button {
+    display: flex;
+    align-items: center;
+    position: fixed;
+    top: 40px;
+    left: 430px;
     width: 26px;
     height: 26px;
     cursor: pointer;
@@ -785,6 +1100,217 @@
     transition-duration: .25s;
     }
   }
+ 
+  @media (max-width:444px) {
+    .main {
+    background-size: 264px 264px;
+    }
+  
+    .main__title {
+    margin: 98px 0px 54px 71px;
+    font: 34px/39px pt_serifbold, arial, helvetica, sans-serif;
+    }
+  
+    .main__subtitle {
+    margin: 10px 3px 37px 61px;
+    }
+      
+    .menu__button {
+    display: flex;
+    align-items: center;
+    position: fixed;
+    top: 40px;
+    left: 390px;
+    width: 26px;
+    height: 26px;
+    cursor: pointer;
+    z-index: 1;
+    }
+     
+    .menu__button > span,
+    .menu__button > span::before, 
+    .menu__button > span::after {
+    display: block;
+    position: absolute;
+    width: 100%;
+    height: 2px;
+    background-color: #0056EC;
+    }
+      
+    .menu__button > span::before {
+    content: '';
+    top: 5px;
+    width: 26px;
+    }
+      
+    .menu__button > span::after {
+    content: '';
+    top: 10px;
+    width: 26px;
+    }
+      
+    .menu {
+    display: block;
+    position: fixed;
+    visibility: hidden;
+    left: auto;
+    width: 100%;
+    height: 100%;
+    padding: 70px 0;
+    list-style: none;
+    text-align: center;
+    background-color: #ffffff;;
+    }
+        
+    .menu__item {
+    display: block;
+    padding: 20px 24px;
+    color: #333;
+    font-family: 'robotomedium', sans-serif;
+    font-size: 30px;
+    font-weight: 600;
+    text-decoration: none;
+    }
+        
+    .menu__checkbox:checked ~ .menu__button > span {
+    transform: rotate(45deg);
+    }
+          
+    .menu__checkbox:checked ~ .menu__button > span::before {
+    transform: rotate(0);
+    top: 0;
+    }
+          
+    .menu__checkbox:checked ~ .menu__button > span::after {
+    transform: rotate(90deg);
+    top: 0;
+    }
+          
+    .menu__checkbox:checked ~ .menu {
+    visibility: visible;
+    left:0;
+    }
+          
+    .menu__button > span,
+    .menu__button > span::before,
+    .menu__button > span::after {
+    transition-duration: .25s;
+    }
+          
+    .menu {
+    transition-duration: .25s;
+    }
+        
+    .menu__item {
+    transition-duration: .25s;
+    }
+  }
+
+  @media (max-width:414px) {
+    .main {
+    background-size: 258px 258px;
+    }
+  
+    .main__title {
+    margin: 116px 0px 54px 45px;
+    font: 34px/39px pt_serifbold, arial, helvetica, sans-serif;
+    }
+  
+    .main__subtitle {
+    margin: 10px 3px 37px 61px;
+    }
+      
+    .menu__button {
+    display: flex;
+    align-items: center;
+    position: fixed;
+    top: 40px;
+    left: 340px;
+    width: 26px;
+    height: 26px;
+    cursor: pointer;
+    z-index: 1;
+    }
+     
+    .menu__button > span,
+    .menu__button > span::before, 
+    .menu__button > span::after {
+    display: block;
+    position: absolute;
+    width: 100%;
+    height: 2px;
+    background-color: #0056EC;
+    }
+      
+    .menu__button > span::before {
+    content: '';
+    top: 5px;
+    width: 26px;
+    }
+      
+    .menu__button > span::after {
+    content: '';
+    top: 10px;
+    width: 26px;
+    }
+      
+    .menu {
+    display: block;
+    position: fixed;
+    visibility: hidden;
+    left: auto;
+    width: 100%;
+    height: 100%;
+    padding: 70px 0;
+    list-style: none;
+    text-align: center;
+    background-color: #ffffff;;
+    }
+        
+    .menu__item {
+    display: block;
+    padding: 20px 24px;
+    color: #333;
+    font-family: 'robotomedium', sans-serif;
+    font-size: 30px;
+    font-weight: 600;
+    text-decoration: none;
+    }
+        
+    .menu__checkbox:checked ~ .menu__button > span {
+    transform: rotate(45deg);
+    }
+          
+    .menu__checkbox:checked ~ .menu__button > span::before {
+    transform: rotate(0);
+    top: 0;
+    }
+          
+    .menu__checkbox:checked ~ .menu__button > span::after {
+    transform: rotate(90deg);
+    top: 0;
+    }
+          
+    .menu__checkbox:checked ~ .menu {
+    visibility: visible;
+    left:0;
+    }
+          
+    .menu__button > span,
+    .menu__button > span::before,
+    .menu__button > span::after {
+    transition-duration: .25s;
+    }
+          
+    .menu {
+    transition-duration: .25s;
+    }
+        
+    .menu__item {
+    transition-duration: .25s;
+    }
+  }
+  
     
   @media (max-width:375px) {
 
@@ -806,12 +1332,12 @@
   
     .logo__circle {
     right: 0px;
-    top: 66%;
+    top: 45%;
     }
 
     .logo__circle_color_blue {
     left: 13px;
-    top: 60px;
+    top: 43px;
     }
 
     .main {
@@ -836,8 +1362,6 @@
     }
 
     .main__button {
-    margin-right: 112px;
-    margin-left: 39px;
     font: 14px/16px robotomedium, arial, helvetica, sans-serif;
     width: 209px;
     height: 44px;
